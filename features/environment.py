@@ -5,12 +5,12 @@ def browser_init(context):
     """
     :param context: Behave context
     """
-    context.driver = webdriver.Chrome()
+    context.driver = webdriver.Chrome(executable_path="\\Users\\lngsvakti\\Desktop\\MyDocuments\\chromedriver.exe")
     # context.browser = webdriver.Safari()
     # context.browser = webdriver.Firefox()
 
     context.driver.maximize_window()
-    context.driver.implicitly_wait(4)
+    context.driver.implicitly_wait(6)
 
 
 def before_scenario(context, scenario):

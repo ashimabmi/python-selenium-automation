@@ -1,0 +1,17 @@
+Amazon Logo,search by xpath,"//i[@class="a-icon a-icon-logo"]"
+Sign-In,search by xpath,"//h1[@class="a-spacing-small"]"
+Email or mobile phone number label,search by xpath,"//label[@for="ap_email"]"
+Email or mobile phone number field,search by id,"ap_email"
+Continue button,search by id,"continue"
+Continue button,search by xpath,"//input[@id="continue"]"
+Need help link,search by xpath,"//span[@class="a-expander-prompt"]"
+Forgot your password Link,search by id,"auth-fpp-link-bottom"
+Forgot your password Link,search by xpath,"//a[@id="auth-fpp-link-bottom"]"
+Other issues with sign-in Link, search by xpath,"//a[@id="ap-other-signin-issues-link"]"
+Create your Amazon account button,search by xpath,"//a[@id="createAccountSubmit"]"
+Conditions of use link,search by xpath,
+" //div[@class="a-section a-spacing-small a-text-center a-size-mini"]//a[contains(text(),'Conditions of Use')]"
+Privacy Notice link,search by xpath,
+"//div[@class="a-section a-spacing-small a-text-center a-size-mini"]//a[contains(text(),'Privacy Notice')]"
+
+
