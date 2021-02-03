@@ -1,0 +1,11 @@
+Your name, search by css selector,#ap_customer_name
+Email, search by css selector,input[id='#ap_customer_name']
+Password, search by css selector,#ap_password
+Re-enter password,search by css selector,#ap_password_check
+create your amazon account button,search by css selector,#continue
+Conditions of Use link,search by css selector, div[id='legalTextRow'] a:nth-child(1)
+Privacy Notice link,search by css selector, div[id='legalTextRow'] a:nth-child(2)
+Sign-In, search by css selector, a.a-link-emphasis
+Help, search by xpath,//div[@class='a-section a-spacing-small a-text-center a-size-mini']//a[contains(text(),'Help')]
+conditions of use,search by xpath,//a[contains(@href, 'ap_desktop_footer_cou')]
+Privacy Notice, search by xpath,//a[contains(@href, 'ap_desktop_footer_privacy_notice')]
