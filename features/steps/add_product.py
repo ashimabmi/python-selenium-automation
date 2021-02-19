@@ -1,7 +1,5 @@
 from selenium.webdriver.common.by import By
 from behave import given, when, then
-from time import sleep
-
 
 PRODUCT_CLICK = (By.XPATH, "//span[@data-component-type='s-product-image']//a")
 ADD_CART_CLICK = (By.ID, 'add-to-cart-button')
@@ -31,9 +29,9 @@ def product_click(context):
 
 @when('select the product quantity {number}')
 def product_qty(context, number):
+
     selector = context.driver.find_elements(*PRODUCT_QTY)
     selector[int(number)-1].click()
-    sleep(2)
 
 
 @when('Click on add to cart')

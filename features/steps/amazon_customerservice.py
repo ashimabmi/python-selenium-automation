@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 from behave import given, when, then
-from time import sleep
+
 
 #CUSTOMER_SERVICE = (By.CSS_SELECTOR, "#nav-xshop a:nth-child(3)")
 HEAD_TEXT = (By.CSS_SELECTOR, "div.a-section.ss-landing-container h1")
