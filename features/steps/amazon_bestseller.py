@@ -34,11 +34,13 @@ def click_link_new_page(context):
     links_click = context.driver.find_elements(*LINKS_CLICK)
     for i in range(len(links_click)):
 
-        if links_click[i].text in ['Best Sellers', 'New Releases', 'Movers & Shakers', 'Most Wished For', 'Gift Ideas']:
-            links_click[i].click()
-            txt = context.driver.find_element(*HEADER_TXT).text
-            links_click = context.driver.find_elements(*LINKS_CLICK)
-            assert txt.find(links_click[i].text) != -1, 'expected text is not in actual text'
+        #if links_click[i].text in ['Best Sellers', 'New Releases', 'Movers & Shakers', 'Most Wished For', 'Gift Ideas']:
+        links_txt = links_click[i].text
+        links_click[i].click()
+        txt = context.driver.find_element(*HEADER_TXT).text
+        links_click = context.driver.find_elements(*LINKS_CLICK)
+        #assert txt.find(links_click[i].text) != -1, 'expected text is not in actual text'
+        assert links_txt in txt
 
 
 

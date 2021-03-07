@@ -1,26 +1,20 @@
-from selenium.webdriver.common.by import By
-from behave import given, when, then
 
-# ORDER_BTN = By.XPATH, "//a[@id='nav-orders']"
+from behave import given, when, then
 
 
 @given('Open amazon page')
 def amazon_page_open(context):
-    context.driver.get("https://www.amazon.com/")
+    context.app.main_page.main_open_page()
 
 
 @when('user clicks orders')
 def order_click(context):
-    # context.driver.find_element(*ORDER_BTN).click()
-    context.driver.find_element(By.XPATH, "//a[@id='nav-orders']").click()
+    context.app.main_page.order_click()
 
 
 @then('SignIn page is opened')
 def sign_in_page(context):
-    page_title = context.driver.title
-    print(page_title)
-    assert page_title == "Amazon Sign-In"
-
+    context.app.sign_in_page.sign_in_page_title('Amazon Sign-In')
 
 
 
