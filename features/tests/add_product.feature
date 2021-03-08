@@ -12,6 +12,6 @@ Feature: Test scenarios for add product functionality
     Then Product is Added to Cart message is shown
     Then cart count is shown as <item_count>
     Examples:
-    | item   |number|item_count|
-    | Toys   | 3    | 3        |
-    | craft  | 2    | 2        |
+    | item      |number|item_count|
+    | baby Toys | 3    | 3        |
+    | craft     | 2    | 2        |

@@ -4,7 +4,7 @@ from behave import given, when, then
 
 @given('Open amazon main page')
 def amazon_page_open(context):
-    context.driver.get("https://www.amazon.com/")
+    context.app.main_page.main_open_page()
 
 
 @when('User clicks on cart icon')
